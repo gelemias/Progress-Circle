@@ -23,6 +23,15 @@ Parameters required:
 - strokeWidth: progress bar's size
 - strokeColor: progress bar's color
 - startAngle: the point in the circumference to start
+
+To update the percentage of the progress use the func updateProgress(percentage: Float) {
+
+```swift
+    func bgProcessDidUpdatePackageDownload(package: MyPackage, percent: CGFloat) {
+        percent = percent >= 360 ? 0 : percent
+        self.proCircle.updateProgress(percentage: percent)
+    }
+```
  
  The Project comes with a Playground to help the sample
  
