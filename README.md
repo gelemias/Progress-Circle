@@ -1,4 +1,4 @@
-# Progress-Circle
+# RDProgressCircle
 Simple progress bar in the shape of a circle
 
 <img src="animation.gif" width="700">
