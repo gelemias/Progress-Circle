@@ -26,6 +26,8 @@ extension Float {
 }
 
 class RDProgressCircle: UIControl {
+    
+    private let maxDegree = Float(Double.pi * 2).radiansToDegrees
 
     public var strokeWidth: CGFloat  = 2
     public var strokeColor: UIColor = .black
@@ -70,8 +72,9 @@ class RDProgressCircle: UIControl {
         midPath.stroke()
     }
 
+    // from 0 to 1
     open func updateProgress(percentage: Float) {
-        self.endAngle = percentage >= 360 ? 360 : percentage
+        self.endAngle = percentage >= 1 ? Float(maxDegree) : percentage * Float(maxDegree)
         self.setNeedsDisplay()
     }
 }
