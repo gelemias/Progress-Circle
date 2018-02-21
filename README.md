@@ -5,7 +5,7 @@ Simple progress bar in the shape of a circle
 
 ## Installation
 
-Add the class RDProgressCircle to your project to start using it.
+copy and paste **RDProgressCircle.swift** file to your project to start using it.
 
 ## Usage
 
